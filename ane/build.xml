@@ -23,6 +23,7 @@
 			<arg value="-source-path+=source/as3/src"/>
 			<arg value="-include-sources+=source/as3/src"/>
 			<arg value="-output=temp/swc_temp/as3_extension.swc"/>
+			<arg value="-debug=false"/>
 		</java>
 
 		<echo message="Build swc complete: temp/swc_temp/as3_extension.swc"/>
@@ -64,7 +65,9 @@
 			<arg value="../${extension_xml}"/>
 			<arg line="-swc swc_lib/as3_extension.swc"/>
 			<arg line="-platform Android-ARM -C android_lib/ ."/>
+			<arg line="-platform Android-ARM64 -C android_lib/ ."/>
 			<arg line="-platform Android-x86 -C android_lib/ ."/>
+			<arg line="-platform Android-x64 -C android_lib/ ."/>
 			<arg line="-platform default -C default_lib/ ."/>
 		</java>
 	</target>

@@ -10,7 +10,21 @@
 				<finalizer>com.aratush.ane.toast.ToastExtension</finalizer>
 			</applicationDeployment>
 		</platform>
+		<platform name="Android-ARM64">
+			<applicationDeployment>
+				<nativeLibrary>extension.jar</nativeLibrary>
+				<initializer>com.aratush.ane.toast.ToastExtension</initializer>
+				<finalizer>com.aratush.ane.toast.ToastExtension</finalizer>
+			</applicationDeployment>
+		</platform>
 		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>extension.jar</nativeLibrary>
+				<initializer>com.aratush.ane.toast.ToastExtension</initializer>
+				<finalizer>com.aratush.ane.toast.ToastExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x64">
 			<applicationDeployment>
 				<nativeLibrary>extension.jar</nativeLibrary>
 				<initializer>com.aratush.ane.toast.ToastExtension</initializer>
